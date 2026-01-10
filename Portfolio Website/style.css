@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  padding-top: 70px;
+}
+
+.hero-section {
+  min-height: 90vh;
+  background: linear-gradient(to right, #a5bacf, #ffffff);
+}
+
+.skill-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+}
+
+.text-purple {
+  color: #7952b3;
+}
+.text-orange {
+  color: #fd7e14;
+}
