@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Foodie | Restaurant Website</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap Icons -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Foodie</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#restaurantNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="restaurantNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero-section d-flex align-items-center text-white">
+    <div class="container text-center">
+      <h1 class="display-4 fw-bold">Delicious Food, Delivered Fresh</h1>
+      <p class="lead my-3">
+        Experience the taste of quality ingredients and expert chefs
+      </p>
+      <a href="#menu" class="btn btn-warning btn-lg">View Menu</a>
+    </div>
+  </section>
+
+  <!-- ================= MENU ================= -->
+  <section id="menu" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Our Menu</h2>
+        <p class="text-muted">Fresh & tasty meals everyday</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="">
+            <div class="card-body text-center">
+              <h5 class="card-title">Pizza</h5>
+              <p class="text-muted">Cheesy delight with fresh toppings</p>
+              <span class="fw-bold text-warning">₹299</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="">
+            <div class="card-body text-center">
+              <h5 class="card-title">Burger</h5>
+              <p class="text-muted">Juicy grilled burger with fries</p>
+              <span class="fw-bold text-warning">₹199</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="">
+            <div class="card-body text-center">
+              <h5 class="card-title">Pasta</h5>
+              <p class="text-muted">Creamy Italian style pasta</p>
+              <span class="fw-bold text-warning">₹249</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="https://via.placeholder.com/500x350" class="img-fluid rounded" alt="">
+        </div>
+
+        <div class="col-lg-6">
+          <h2 class="fw-bold">About Our Restaurant</h2>
+          <p class="text-muted">
+            Foodie is a modern restaurant serving delicious meals prepared
+            with fresh ingredients and love. Our chefs focus on quality and taste.
+          </p>
+          <p class="text-muted">
+            We believe in creating memorable dining experiences for our customers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="py-5 text-white bg-dark">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-3">Visit Us Today</h2>
+      <p class="mb-4">123 Food Street, New Delhi | Open 10 AM – 11 PM</p>
+      <a href="#" class="btn btn-warning btn-lg">
+        <i class="bi bi-telephone"></i> Call Now
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="py-3 bg-black text-center text-white">
+    <small>© 2026 Foodie Restaurant | Powered by Bootstrap 5</small>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

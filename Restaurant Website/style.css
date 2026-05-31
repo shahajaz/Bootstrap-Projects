@@ -1,0 +1,19 @@
+body {
+  padding-top: 70px;
+}
+
+.hero-section {
+  min-height: 90vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("https://via.placeholder.com/1600x900");
+  background-size: cover;
+  background-position: center;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  transition: 0.3s ease;
+}
