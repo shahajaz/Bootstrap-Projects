@@ -1,0 +1,159 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* General Styling */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #e0f2fe, #eef2ff);
+    font-family: Arial, sans-serif;
+}
+
+/* Calculator Container */
+.calculator {
+    width: 100%;
+    max-width: 380px;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.15);
+}
+
+/* Header */
+.calculator-header {
+    background: #0f172a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.calculator-header h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Display */
+.calculator-display {
+    background: #f1f5f9;
+    padding: 10px;
+    text-align: right;
+    margin: 15px;
+    border-radius: 12px;
+    min-height: 100px;
+    overflow: hidden;
+}
+
+#expression {
+    min-height: 24px;
+    color: #64748b;
+    font-size: 16px;
+    overflow-wrap: anywhere;
+}
+
+#display {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: right;
+    font-size: 34px;
+    font-weight: bold;
+    color: #0f172a;
+}
+
+/* Button Grid */
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    padding: 0 20px 20px;
+}
+
+/* Common Button Styling */
+.calc-btn {
+    min-width: 0;
+    min-height: 58px;
+    border: none;
+    border-radius: 12px;
+    font-size: 21px;
+    font-weight: 600;
+    background: #f1f5f9;
+    color: #0f172a;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.calc-btn:hover {
+    background: #dbeafe;
+    transform: translateY(-2px);
+}
+
+.calc-btn:active {
+    transform: scale(0.96);
+}
+
+/* Operator Buttons */
+.operator {
+    background: #2563eb;
+    color: white;
+}
+
+.operator:hover {
+    background: #1d4ed8;
+    color: white;
+}
+
+/* Clear Button */
+.clear {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.clear:hover {
+    background: #fecaca;
+}
+
+/* Equals Button */
+.equals {
+    background: #16a34a;
+    color: white;
+}
+
+.equals:hover {
+    background: #15803d;
+    color: white;
+}
+
+/* Delete Button */
+.delete {
+    grid-column: span 4;
+    background: #fecaca;
+}
+
+/* Zero Button */
+.zero {
+    grid-column: span 2;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .calculator-buttons {
+        gap: 7px;
+        padding: 0 14px 14px;
+    }
+
+    .calc-btn {
+        min-height: 52px;
+    }
+
+    #display {
+        font-size: 29px;
+    }
+}
