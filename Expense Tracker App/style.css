@@ -1,0 +1,89 @@
+/* Custom dashboard cards */
+.custom-card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-3px);
+}
+
+/* Balance card */
+.balance-card {
+    background-color: #172b4d;
+    color: white;
+}
+
+/* Income card */
+.income-card {
+    background-color: #e7f8ef;
+    color: #198754;
+}
+
+/* Expense card */
+.expense-card {
+    background-color: #fff0ef;
+    color: #dc3545;
+}
+
+/* Custom form controls */
+.custom-input {
+    border-radius: 8px;
+    padding: 10px 12px;
+    border-color: #dee2e6;
+}
+
+.custom-input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+/* Custom button */
+.custom-btn {
+    border-radius: 8px;
+    padding: 11px;
+    font-weight: 600;
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.custom-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Transaction item */
+.custom-transaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.custom-transaction:last-child {
+    border-bottom: none;
+}
+
+.transaction-amount {
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.income-text {
+    color: #198754;
+}
+
+.expense-text {
+    color: #dc3545;
+}
+
+/* Mobile responsive styling */
+@media (max-width: 576px) {
+    .custom-transaction {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+}
